@@ -15,4 +15,19 @@ class Portfolio:
         self.__assets[asset] = quantity
     
     def invest(self,asset,quantity):
+        if quantity < 0:
+            raise ValueError("Negative invest not permitted")
+        Return True
+        
         self.__assets[asset] = self.__assets.setdefault(asset,0.0) + quantity
+    
+    def divest(self,asset,quantity):
+        if quantity < 0:
+            ValueError("Negative divest not permitted")
+        if __assets.get(asset) = None:
+            raise Exception("Asset doesn't exist")
+        elif __assets.get(asset) < quantity:
+            raise ValueError("Negative asset not permitted")
+        
+        __assets[asset] = __assets.get[asset] - quantity:
+        return True
