@@ -39,4 +39,7 @@ class Portfolio:
     def getPortfolioValue(self):
         return self.__value
 
-#class PortfolioCollection
+class PortfolioCollection:
+    __portfolioCollection = {}
+    
+    def __init__(self,portfolio):
