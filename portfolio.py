@@ -36,3 +36,6 @@ class Portfolio:
     
     def getAssetValue(self,asset):
         return __assets.get(asset)
+    
+    def getPortfolioValue(self,asset):
+        return __value
